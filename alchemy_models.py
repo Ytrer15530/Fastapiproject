@@ -23,11 +23,19 @@ class User(Base):
 
 
 class Post(Base):
-    __tablename__ = 'posts'
+    __tablename__ = 'Posts'
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
     content = Column(String)
+
+
+class Product(Base):
+    __tablename__ = 'products'
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    price = Column(Integer)
     #user_id = Column(ForeignKey("user.id"))
 
 

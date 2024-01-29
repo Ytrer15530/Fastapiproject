@@ -1,4 +1,5 @@
 from app import SessionLocal
+import requests
 
 
 def get_db():

@@ -11,6 +11,15 @@ class UserResponse(UserCreate):
     id: int
 
 
+class ProductCreate(BaseModel):
+    title: str
+    price: int
+
+
+class ProductResponse(ProductCreate):
+    id: int
+
+
 class PostCreate(BaseModel):
     title: str
     content: str
